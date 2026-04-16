@@ -3,96 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jurnal Hidup - [Nama Kamu]</title>
+    <title>Personal Journey | [Nama Kamu]</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-4 flex justify-between items-center">
-        <div class="font-black text-2xl text-blue-600 tracking-tighter">MY.LIFE</div>
-        <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600 uppercase tracking-widest">
-            <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
-            <a href="#kisah" class="hover:text-blue-600 transition">Kisah</a>
-            <a href="#kegiatan" class="hover:text-blue-600 transition">Kegiatan</a>
-            <a href="#arsip" class="hover:text-blue-600 transition">Sertifikat</a>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+        .gradient-text { background: linear-gradient(90deg, #2563eb, #9333ea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-[#1e293b]">
+
+    <nav class="fixed w-full z-50 top-0 px-6 py-4">
+        <div class="max-w-5xl mx-auto glass rounded-2xl px-6 py-3 flex justify-between items-center shadow-sm border border-white/20">
+            <a href="#" class="font-extrabold text-xl tracking-tighter text-blue-600">MY.LOG</a>
+            <div class="hidden md:flex space-x-6 text-sm font-bold tracking-tight text-slate-600 uppercase">
+                <a href="#kisah" class="hover:text-blue-600 transition">Kisah</a>
+                <a href="#momen" class="hover:text-blue-600 transition">Momen</a>
+                <a href="#kegiatan" class="hover:text-blue-600 transition">Kegiatan</a>
+                <a href="#sertifikat" class="hover:text-blue-600 transition">Arsip</a>
+            </div>
         </div>
     </nav>
 
-    <section id="home" class="min-h-screen flex flex-col justify-center items-center px-6 pt-20 bg-white">
-        <div class="relative">
-            <div class="absolute inset-0 bg-blue-400 rounded-full blur-2xl opacity-20"></div>
-            <img src="images/foto-profil.jpg" alt="Profil" class="relative w-44 h-44 rounded-full object-cover border-4 border-white shadow-2xl mb-8">
+    <section class="min-h-screen flex flex-col justify-center items-center pt-20 px-6 text-center">
+        <div data-aos="zoom-out" data-aos-duration="1000">
+            <img src="images/foto-profil.jpg" class="w-40 h-40 rounded-3xl object-cover shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500 mb-8 border-4 border-white">
         </div>
-        <h1 class="text-5xl md:text-7xl font-black text-center mb-4 tracking-tighter">Halo, Saya <span class="text-blue-600">[Nama Kamu]</span></h1>
-        <p class="text-gray-500 text-lg md:text-xl text-center max-w-2xl leading-relaxed">
-            Seorang [Status/Pekerjaan] yang senang mengabadikan setiap momen kehidupan, pencapaian, dan orang-orang tersayang dalam satu tempat.
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tighter" data-aos="fade-up">
+            Hi, I'm <span class="gradient-text">[Nama Kamu]</span>
+        </h1>
+        <p class="text-lg text-slate-500 max-w-xl leading-relaxed mb-8" data-aos="fade-up" data-aos-delay="100">
+            Seorang antusias [Sebutkan Minatmu] yang mendokumentasikan setiap detik berharga, mulai dari karir hingga momen hangat bersama orang tercinta.
         </p>
+        <div class="flex space-x-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="#momen" class="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:scale-105 transition shadow-lg">Lihat Momen</a>
+            <a href="#kontak" class="bg-white text-slate-900 border border-slate-200 px-8 py-3 rounded-xl font-bold hover:bg-slate-50 transition">Kontak</a>
+        </div>
     </section>
 
-    <section id="kisah" class="py-24 px-6 max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-            <div>
-                <h2 class="text-3xl font-bold mb-6">Kisah Hidup</h2>
-                <div class="space-y-4 text-gray-600 leading-loose italic border-l-4 border-blue-600 pl-6">
-                    <p>"Lahir di [Kota] pada tahun [Tahun], saya memulai perjalanan dengan penuh rasa ingin tahu..."</p>
-                    <p>Tuliskan perjalanan hidupmu di sini secara mendalam. Ceritakan tantangan yang pernah kamu hadapi dan apa yang membuatmu menjadi dirimu yang sekarang.</p>
+    <section id="kisah" class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div data-aos="fade-right">
+                <h2 class="text-xs font-black text-blue-600 uppercase tracking-widest mb-2">The Origin</h2>
+                <h3 class="text-3xl font-extrabold mb-6">Kisah Hidup Saya</h3>
+                <div class="space-y-4 text-slate-600 leading-loose">
+                    <p>Lahir di [Kota], saya tumbuh dengan rasa ingin tahu yang besar terhadap [Sebutkan Hal Spesifik]. Perjalanan saya bukan hanya tentang sekolah, tapi tentang menemukan siapa saya sebenarnya.</p>
+                    <p>Melalui website ini, saya ingin membagikan potongan-potongan sejarah kecil yang membentuk diri saya hari ini.</p>
                 </div>
             </div>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
-                <h2 class="text-xl font-bold mb-6 flex items-center"><i class="fa-solid fa-address-card mr-3 text-blue-600"></i> Biodata Lengkap</h2>
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100" data-aos="fade-left">
+                <h3 class="text-xl font-bold mb-6 italic text-slate-400">Personal Details.</h3>
                 <div class="space-y-4">
-                    <div class="flex justify-between border-b border-gray-50 pb-2">
-                        <span class="text-gray-400">Panggilan</span> <span class="font-medium">[Nama]</span>
-                    </div>
-                    <div class="flex justify-between border-b border-gray-50 pb-2">
-                        <span class="text-gray-400">Tempat Lahir</span> <span class="font-medium">[Kota]</span>
-                    </div>
-                    <div class="flex justify-between border-b border-gray-50 pb-2">
-                        <span class="text-gray-400">Hobi Terbesar</span> <span class="font-medium">[Hobi Kamu]</span>
-                    </div>
+                    <div class="flex justify-between border-b pb-2"><span class="font-bold">Nama</span><span class="text-slate-500">[Nama Lengkap]</span></div>
+                    <div class="flex justify-between border-b pb-2"><span class="font-bold">Status</span><span class="text-slate-500">In a Relationship</span></div>
+                    <div class="flex justify-between border-b pb-2"><span class="font-bold">Hobi</span><span class="text-slate-500">[Hobi Kamu]</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-gray-100 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Support System</h2>
+    <section id="momen" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold mb-4">Momen Berharga</h2>
+                <p class="text-slate-400">Kumpulan cerita bersama pacar, keluarga, dan sahabat.</p>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="group overflow-hidden rounded-3xl bg-white p-4 shadow-xl">
-                    <img src="images/keluarga.jpg" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition duration-500">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Keluarga</h3>
-                        <p class="text-gray-500 text-sm">Akar dari segala kekuatan saya. Mereka adalah alasan utama saya untuk terus berjuang.</p>
-                    </div>
+                <div class="rounded-3xl overflow-hidden bg-black aspect-video shadow-2xl" data-aos="zoom-in">
+                    <video controls class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+                        <source src="images/video-kegiatan.mp4" type="video/mp4">
+                    </video>
                 </div>
-                <div class="group overflow-hidden rounded-3xl bg-white p-4 shadow-xl">
-                    <img src="images/pacar.jpg" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition duration-500">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">[Nama Pasangan]</h3>
-                        <p class="text-gray-500 text-sm">Teman berbagi suka dan duka. Partner yang menemani perjalanan pertumbuhan saya.</p>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="images/pacar-1.jpg" class="rounded-2xl h-full object-cover" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/keluarga-1.jpg" class="rounded-2xl h-full object-cover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-span-2 bg-blue-600 rounded-2xl p-6 flex items-center justify-center text-center" data-aos="fade-up" data-aos-delay="300">
+                        <p class="font-bold">"Dukungan mereka adalah bahan bakar utama kesuksesan saya."</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="kegiatan" class="py-24 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12">Kegiatan & Pencapaian</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:border-blue-600 transition cursor-default">
-                <img src="images/sertifikat1.jpg" class="w-full h-40 object-cover rounded-xl mb-4">
-                <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">2024</span>
-                <h4 class="font-bold mt-3">Lulus Kursus Web Design</h4>
-                <p class="text-gray-500 text-sm mt-2">Mendapatkan keahlian dalam membangun antarmuka pengguna yang responsif.</p>
+    <section id="kegiatan" class="py-24 px-6 max-w-3xl mx-auto">
+        <h2 class="text-3xl font-extrabold mb-12 text-center" data-aos="fade-up">Jejak Langkah</h2>
+        <div class="space-y-12">
+            <div class="flex gap-6" data-aos="fade-left">
+                <div class="font-black text-slate-200 text-4xl italic">01</div>
+                <div>
+                    <h4 class="font-extrabold text-xl">[Nama Kegiatan/Event]</h4>
+                    <p class="text-slate-500 mt-2">Menceritakan peranmu dan apa yang kamu dapatkan dari kegiatan ini secara detail.</p>
+                </div>
             </div>
+            <div class="flex gap-6" data-aos="fade-left" data-aos-delay="100">
+                <div class="font-black text-slate-200 text-4xl italic">02</div>
+                <div>
+                    <h4 class="font-extrabold text-xl">[Nama Organisasi/Proyek]</h4>
+                    <p class="text-slate-500 mt-2">Pengalaman luar biasa saat berkolaborasi dengan banyak orang hebat.</p>
+                </div>
             </div>
+        </div>
     </section>
 
-    <footer class="py-12 border-t border-gray-100 text-center">
-        <p class="text-gray-400 text-sm">© 2026 [Nama Kamu] — Terinspirasi dari Kehidupan</p>
+    <section id="sertifikat" class="py-24 bg-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-extrabold mb-12" data-aos="fade-right">Arsip Pencapaian</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group" data-aos="fade-up">
+                    <div class="overflow-hidden rounded-2xl mb-4 shadow-lg">
+                        <img src="images/sertifikat-1.jpg" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h5 class="font-bold text-lg">Sertifikasi [Nama Keahlian]</h5>
+                    <p class="text-sm text-slate-400">Diterbitkan oleh [Lembaga], 2024</p>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t text-center px-6">
+        <div class="flex justify-center space-x-6 mb-6 text-xl">
+            <a href="#" class="hover:text-blue-600 transition"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-blue-600 transition"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="text-slate-400 text-sm font-medium italic">"Every day is a new chapter of a great story."</p>
+        <p class="text-slate-400 text-xs mt-4">© 2026 [Nama Kamu]. Built with Love and Coffee.</p>
     </footer>
 
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+    
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
 </body>
 </html>
