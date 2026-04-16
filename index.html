@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Hidup - [Nama Kamu]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-4 flex justify-between items-center">
+        <div class="font-black text-2xl text-blue-600 tracking-tighter">MY.LIFE</div>
+        <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600 uppercase tracking-widest">
+            <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+            <a href="#kisah" class="hover:text-blue-600 transition">Kisah</a>
+            <a href="#kegiatan" class="hover:text-blue-600 transition">Kegiatan</a>
+            <a href="#arsip" class="hover:text-blue-600 transition">Sertifikat</a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center px-6 pt-20 bg-white">
+        <div class="relative">
+            <div class="absolute inset-0 bg-blue-400 rounded-full blur-2xl opacity-20"></div>
+            <img src="images/foto-profil.jpg" alt="Profil" class="relative w-44 h-44 rounded-full object-cover border-4 border-white shadow-2xl mb-8">
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black text-center mb-4 tracking-tighter">Halo, Saya <span class="text-blue-600">[Nama Kamu]</span></h1>
+        <p class="text-gray-500 text-lg md:text-xl text-center max-w-2xl leading-relaxed">
+            Seorang [Status/Pekerjaan] yang senang mengabadikan setiap momen kehidupan, pencapaian, dan orang-orang tersayang dalam satu tempat.
+        </p>
+    </section>
+
+    <section id="kisah" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Kisah Hidup</h2>
+                <div class="space-y-4 text-gray-600 leading-loose italic border-l-4 border-blue-600 pl-6">
+                    <p>"Lahir di [Kota] pada tahun [Tahun], saya memulai perjalanan dengan penuh rasa ingin tahu..."</p>
+                    <p>Tuliskan perjalanan hidupmu di sini secara mendalam. Ceritakan tantangan yang pernah kamu hadapi dan apa yang membuatmu menjadi dirimu yang sekarang.</p>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <h2 class="text-xl font-bold mb-6 flex items-center"><i class="fa-solid fa-address-card mr-3 text-blue-600"></i> Biodata Lengkap</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between border-b border-gray-50 pb-2">
+                        <span class="text-gray-400">Panggilan</span> <span class="font-medium">[Nama]</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-50 pb-2">
+                        <span class="text-gray-400">Tempat Lahir</span> <span class="font-medium">[Kota]</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-50 pb-2">
+                        <span class="text-gray-400">Hobi Terbesar</span> <span class="font-medium">[Hobi Kamu]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-100 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Support System</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group overflow-hidden rounded-3xl bg-white p-4 shadow-xl">
+                    <img src="images/keluarga.jpg" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Keluarga</h3>
+                        <p class="text-gray-500 text-sm">Akar dari segala kekuatan saya. Mereka adalah alasan utama saya untuk terus berjuang.</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-3xl bg-white p-4 shadow-xl">
+                    <img src="images/pacar.jpg" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">[Nama Pasangan]</h3>
+                        <p class="text-gray-500 text-sm">Teman berbagi suka dan duka. Partner yang menemani perjalanan pertumbuhan saya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kegiatan" class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12">Kegiatan & Pencapaian</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:border-blue-600 transition cursor-default">
+                <img src="images/sertifikat1.jpg" class="w-full h-40 object-cover rounded-xl mb-4">
+                <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">2024</span>
+                <h4 class="font-bold mt-3">Lulus Kursus Web Design</h4>
+                <p class="text-gray-500 text-sm mt-2">Mendapatkan keahlian dalam membangun antarmuka pengguna yang responsif.</p>
+            </div>
+            </div>
+    </section>
+
+    <footer class="py-12 border-t border-gray-100 text-center">
+        <p class="text-gray-400 text-sm">© 2026 [Nama Kamu] — Terinspirasi dari Kehidupan</p>
+    </footer>
+
+</body>
+</html>
